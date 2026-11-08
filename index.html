@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiSlots Arcade</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎰</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="cabinet">
+        <header class="arcade-header">
+            <h1>EmojiSlots</h1>
+            <p class="tagline">Match all 3 to hit the jackpot!</p>
+        </header>
+
+        <section class="scoreboard" aria-label="Scoreboard">
+            <div class="score-card">
+                <span class="score-label">Balance</span>
+                <span class="score-value" id="balance">100</span>
+            </div>
+            <div class="score-card">
+                <span class="score-label">Spin Cost</span>
+                <span class="score-value" id="spin-cost">10</span>
+            </div>
+            <div class="score-card">
+                <span class="score-label">Jackpot</span>
+                <span class="score-value" id="jackpot-value">+100</span>
+            </div>
+        </section>
+
+        <section class="reels" aria-label="Slot reels">
+            <div class="reel" id="reel-1">🍒</div>
+            <div class="reel" id="reel-2">🍋</div>
+            <div class="reel" id="reel-3">🍇</div>
+        </section>
+
+        <p class="message" id="message" aria-live="polite">Press SPIN to play. Each spin costs 10 points.</p>
+
+        <div class="controls">
+            <button type="button" id="spin-btn" class="spin-btn">SPIN</button>
+            <button type="button" id="reset-btn" class="reset-btn hidden">New Game</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
