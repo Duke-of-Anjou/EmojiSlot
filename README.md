@@ -4,7 +4,7 @@ A 3-reel emoji slot machine with an arcade-cabinet look. Each spin costs 10 poin
 
 Built with plain HTML, CSS and JavaScript: no frameworks, libraries, CDNs or image files.
 
-**Live demo:** _add your Vercel link here_
+**Live demo:** _emojislot.vercel.app_
 
 ## Features
 
